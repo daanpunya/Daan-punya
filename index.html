@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daan Punya | Charity Foundation</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader"></div>
+  <h2>❤️ DAAN PUNYA</h2>
+</div>
+
+<header>
+  <div class="logo">❤️ DAAN PUNYA</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#causes">Causes</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  <a href="#donate" class="btn">Donate</a>
+  <button class="dark-btn" onclick="darkMode()">🌙</button>
+</header>
+
+<!-- HERO: no hidden class, always visible -->
+<section class="hero" id="home">
+  <div class="hero-overlay">
+    <h1>❤️ DAAN PUNYA</h1>
+    <h2>Ek Chhota Daan, Kisi Ki Badi Muskaan</h2>
+    <p>Helping Children, Elderly People and Animals with Love & Humanity.</p>
+    <a href="#donate" class="btn">Donate Now</a>
+    <a href="#about" class="btn btn2">Learn More</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About Us</h2>
+  <p>Daan Punya Foundation ek non-profit organization hai jo garib bachchon,
+  vriddh logon aur beghar jaanwaron ki madad karti hai.</p>
+</section>
+
+<section class="impact">
+  <h2>Our Impact ❤️</h2>
+  <div class="impact-box">
+    <div class="impact-card"><h1 id="mealCount">0</h1><p>Meals Served</p></div>
+    <div class="impact-card"><h1 id="donorCount">0</h1><p>Happy Donors</p></div>
+    <div class="impact-card"><h1 id="animalCount">0</h1><p>Animals Helped</p></div>
+    <div class="impact-card"><h1 id="volunteerCount">0</h1><p>Volunteers</p></div>
+  </div>
+</section>
+
+<section id="causes" class="causes">
+  <h2>Our Causes</h2>
+  <div class="cards">
+    <div class="card"><h3>👶 Children</h3><p>Education & Food Support</p></div>
+    <div class="card"><h3>👴 Elderly</h3><p>Care & Medical Help</p></div>
+    <div class="card"><h3>🐶 Animals</h3><p>Food & Shelter</p></div>
+  </div>
+</section>
+
+<!-- GALLERY with SVG placeholders — no internet needed -->
+<section id="gallery" class="gallery">
+  <h2>Gallery</h2>
+  <p style="color:#777;margin-bottom:20px;">Our moments of giving & love ❤️</p>
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80" alt="Children in need" loading="lazy">
+      <div class="gallery-label">👶 Bachchon Ki Muskaan</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=80" alt="Food donation India" loading="lazy">
+      <div class="gallery-label">🍱 Khana Baatna</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&q=80" alt="Helping poor children" loading="lazy">
+      <div class="gallery-label">🤝 Hamare Volunteers</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1609234656388-0ff363383899?w=600&q=80" alt="Elderly care India" loading="lazy">
+      <div class="gallery-label">👴 Buzurgon Ki Seva</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600&q=80" alt="Helping street animals" loading="lazy">
+      <div class="gallery-label">🐶 Jaanwaron Ki Madad</div>
+    </div>
+
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?w=600&q=80" alt="Community event India" loading="lazy">
+      <div class="gallery-label">🌍 Community Event</div>
+    </div>
+
+  </div>
+</section>
+
+<section class="team">
+  <h2>Meet Our Team</h2>
+  <div class="cards">
+    <div class="card"><div class="avatar">👨</div><h3>Vishesh Borkar</h3><p>Founder</p></div>
+    <div class="card"><div class="avatar">👩</div><h3>Volunteer Team</h3><p>Helping People Everyday</p></div>
+    <div class="card"><div class="avatar">❤️</div><h3>Supporters</h3><p>Making Every Donation Count</p></div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>What People Say ❤️</h2>
+  <div class="cards">
+    <div class="card"><p>"Daan Punya ne bahut logon ki zindagi badli hai."</p><h3>- Rahul</h3></div>
+    <div class="card"><p>"Amazing NGO! Transparent aur trustworthy."</p><h3>- Priya</h3></div>
+    <div class="card"><p>"Har donation sach me kisi ki help karta hai."</p><h3>- Aman</h3></div>
+  </div>
+</section>
+
+<section id="donate" class="donate">
+  <h2>Support Our Mission ❤️</h2>
+  <p>Your small donation can change someone's life.</p>
+  <div class="progress-box">
+    <div class="progress-bar"><div class="progress"></div></div>
+    <p><b>₹2,50,000</b> Goal • <b>₹85,000</b> Raised</p>
+  </div>
+  <div class="cards">
+    <div class="card"><h2>1000+</h2><p>Meals Served</p></div>
+    <div class="card"><h2>500+</h2><p>Happy Donors</p></div>
+    <div class="card"><h2>250+</h2><p>Animals Helped</p></div>
+  </div>
+  <a href="#" class="btn">Donate Now</a>
+</section>
+
+<section class="stats">
+  <h2>Our Journey</h2>
+  <div class="stats-box">
+    <div class="stat"><h1>10K+</h1><p>People Helped</p></div>
+    <div class="stat"><h1>500+</h1><p>Donors</p></div>
+    <div class="stat"><h1>50+</h1><p>Events Organized</p></div>
+    <div class="stat"><h1>100+</h1><p>Volunteers</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <p>📞 +91 89990 25875</p>
+  <p>📧 Vishborkarvish@gmail.com</p>
+  <p>📍 India</p>
+</section>
+
+<footer>
+  <h2>❤️ DAAN PUNYA</h2>
+  <p>Together We Can Make A Difference</p>
+  <div class="social">
+    <a href="#">📘 Facebook</a>
+    <a href="#">📸 Instagram</a>
+    <a href="#">▶️ YouTube</a>
+  </div>
+  <p>© 2026 Daan Punya Foundation</p>
+</footer>
+
+<a href="https://wa.me/918999025875" class="whatsapp" target="_blank">💬</a>
+
+<div class="hearts">
+  <span>❤️</span><span>💖</span><span>💕</span><span>💝</span><span>❤️</span>
+</div>
+
+<button id="topBtn" onclick="topFunction()">⬆</button>
+
+<script src="script.js"></script>
+</body>
+</html>
